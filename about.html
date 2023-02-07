@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230207135802" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230207135802">
+    <title>О нас</title>
+</head>
+
+<body>
+    <header class="header hide">
+    <div class="header__container container">
+        <div class="header__body">
+            <div class="header__top top-header">
+                <div class="top-header__row">
+                    <a href="index.html" class="top-header__logo">
+                        <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo"></picture>
+                    </a>
+                    <div class="bottom-header__row bottom-header__row_top">
+                        <div class="bottom-header__column">
+                            <div class="bottom-header__tels">
+                                <div class="bottom-header__tel tel-bottom-header">
+                                    <svg class="tel-bottom-header__icon">
+                                        <use xlink:href="#tel"></use>
+                                    </svg>
+                                    <a href="tel:+48792765778" class="tel-bottom-header__link">+48 792-765-778</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-header__column">
+                            <div class="bottom-header__email email-bottom-header">
+                                <svg class="email-bottom-header__icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                                <a href="mailto:Buiro.bpmt@gmail.com"
+                                    class="email-bottom-header__link">Buiro.bpmt@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="top-header__menu menu-top-header" data-da="bottom-header__row_bottom, 1, 1342">
+                        <ul class="menu-top-header__list">
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Главная </a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">О нас</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Курсы</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="top-header__btns">
+                        <div class="top-header__languages languages-top-header"
+                            data-da="bottom-header__row_bottom, 0, 600">
+                            <div class="languages-top-header__items">
+                                <a href="" class="languages-top-header__item">Ru</a>
+                                <a href="" class="languages-top-header__item">Ua</a>
+                                <a href="" class="languages-top-header__item">En</a>
+                            </div>
+                        </div>
+                        <a href="" class="top-header__btn">Перезвоните сейчас</a>
+                        <a href="" class="top-header__burger-icon">
+                            <span></span><span></span><span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom bottom-header">
+                <div class="bottom-header__row bottom-header__row_bottom">
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__tels">
+                            <div class="bottom-header__tel tel-bottom-header">
+                                <svg class="tel-bottom-header__icon">
+                                    <use xlink:href="#tel"></use>
+                                </svg>
+                                <a href="tel:+48792765778" class="tel-bottom-header__link">+48 792-765-778</a>
+                            </div>
+                            <div class="bottom-header__tel tel-bottom-header">
+                                <svg class="tel-bottom-header__icon">
+                                    <use xlink:href="#tel"></use>
+                                </svg>
+                                <a href="tel:+48792765443" class="tel-bottom-header__link">+48 792 765 443</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__socials socials-bottom-header">
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#whats-app"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__email email-bottom-header">
+                            <svg class="email-bottom-header__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                            <a href="mailto:Buiro.bpmt@gmail.com"
+                                class="email-bottom-header__link">Buiro.bpmt@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header__popup" class="header__popup popup-header">
+                <div class="popup-header__body">
+                    <div class="popup-header__content">
+                        <a href="#" class="popup-header__close">X</a>
+                        <div class="popup-header__title">Перезвоните сейчас</div>
+                        <form action="#" class="popup-header__form form">
+                            <div class="form__content form__content-popup">
+                                <input autocomplete='off' type='tel' name='form[]' data-value='Ваш номер телефону'
+                                    class="form__input form__input_tel form__input-popup">
+                                <button type='submit' class='form__btn form__btn-popup'>Передзвонити</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+    
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top top-footer">
+            <a href="" class="top-footer__logo">
+                <picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="logo"></picture>
+            </a>
+            <nav class="top-footer__menu">
+                <ul class="top-footer__list">
+                    <li class="top-footer__item">
+                        <a href="" class="top-footer__link">Главная </a>
+                    </li>
+                    <li class="top-footer__item">
+                        <a href="english.html" class="top-footer__link">Курс английского языка </a>
+                    </li>
+                    <li class="top-footer__item">
+                        <a href="polish.html" class="top-footer__link">Курс польского языка </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="top-footer__arrow-scroll"></a>
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__text">Политика конфиденциальности</div>
+            <div class="bottom-footer__socials socials-footer">
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/facebook.svg" alt="facebook">
+                </a>
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/telegram.svg" alt="telegram">
+                </a>
+            </div>
+            <div class="bottom-footer__copy">© BLA-BLA SCHOOL 2022</div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
