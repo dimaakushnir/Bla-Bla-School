@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230329215230" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230329215230">
+    <title>Курс Английського языка</title>
+</head>
+
+<body>
+    <header class="header hide">
+    <div class="header__container container">
+        <div class="header__body">
+            <div class="header__top top-header">
+                <div class="top-header__row">
+                    <a href="index.html" class="top-header__logo">
+                        <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo"></picture>
+                    </a>
+                    <div class="bottom-header__row bottom-header__row_top">
+                        <div class="bottom-header__column">
+                            <div class="bottom-header__tels">
+                                <div class="bottom-header__tel tel-bottom-header">
+                                    <svg class="tel-bottom-header__icon">
+                                        <use xlink:href="#tel"></use>
+                                    </svg>
+                                    <a href="tel:+48792765778" class="tel-bottom-header__link">+48 792-765-778</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-header__column">
+                            <div class="bottom-header__email email-bottom-header">
+                                <svg class="email-bottom-header__icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                                <a href="mailto:Buiro.bpmt@gmail.com"
+                                    class="email-bottom-header__link">Buiro.bpmt@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="top-header__menu menu-top-header" data-da="bottom-header__row_bottom, 1, 1342">
+                        <ul class="menu-top-header__list">
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Главная </a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">О нас</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Курсы</a>
+                            </li>
+                            <li class="menu-top-header__item">
+                                <a href="" class="menu-top-header__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="top-header__btns">
+                        <div class="top-header__languages languages-top-header"
+                            data-da="bottom-header__row_bottom, 0, 600">
+                            <div class="languages-top-header__items">
+                                <a href="" class="languages-top-header__item">Ru</a>
+                                <a href="" class="languages-top-header__item">Ua</a>
+                                <a href="" class="languages-top-header__item">En</a>
+                            </div>
+                        </div>
+                        <a href="" class="top-header__btn">Перезвоните сейчас</a>
+                        <a href="" class="top-header__burger-icon">
+                            <span></span><span></span><span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom bottom-header">
+                <div class="bottom-header__row bottom-header__row_bottom">
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__tels">
+                            <div class="bottom-header__tel tel-bottom-header">
+                                <svg class="tel-bottom-header__icon">
+                                    <use xlink:href="#tel"></use>
+                                </svg>
+                                <a href="tel:+48792765778" class="tel-bottom-header__link">+48 792-765-778</a>
+                            </div>
+                            <div class="bottom-header__tel tel-bottom-header">
+                                <svg class="tel-bottom-header__icon">
+                                    <use xlink:href="#tel"></use>
+                                </svg>
+                                <a href="tel:+48792765443" class="tel-bottom-header__link">+48 792 765 443</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__socials socials-bottom-header">
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#whats-app"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="socials-bottom-header__item">
+                                <svg>
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom-header__column">
+                        <div class="bottom-header__email email-bottom-header">
+                            <svg class="email-bottom-header__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+                            <a href="mailto:Buiro.bpmt@gmail.com"
+                                class="email-bottom-header__link">Buiro.bpmt@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header__popup" class="header__popup popup-header">
+                <div class="popup-header__body">
+                    <div class="popup-header__content">
+                        <a href="#" class="popup-header__close">X</a>
+                        <div class="popup-header__title">Перезвоните сейчас</div>
+                        <form action="#" class="popup-header__form form">
+                            <div class="form__content form__content-popup">
+                                <input autocomplete='off' type='tel' name='form[]' data-value='Ваш номер телефону'
+                                    class="form__input form__input_tel form__input-popup">
+                                <button type='submit' class='form__btn form__btn-popup'>Передзвонити</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+    <svg display="none">
+    <symbol id="mail" viewBox="0 0 23 18">
+        <g>
+            <path
+                d="M2.25 18C1.63125 18 1.10175 17.7799 0.6615 17.3396C0.2205 16.8986 0 16.3688 0 15.75V2.25C0 1.63125 0.2205 1.10175 0.6615 0.6615C1.10175 0.2205 1.63125 0 2.25 0C9.27944 0 13.2206 0 20.25 0C20.8688 0 21.3986 0.2205 21.8396 0.6615C22.2799 1.10175 22.5 1.63125 22.5 2.25V15.75C22.5 16.3688 22.2799 16.8986 21.8396 17.3396C21.3986 17.7799 20.8688 18 20.25 18H2.25ZM11.25 9.92812C11.3438 9.92812 11.442 9.91388 11.5448 9.88538C11.6483 9.85763 11.7469 9.81563 11.8406 9.75938L19.8 4.78125C19.95 4.6875 20.0625 4.5705 20.1375 4.43025C20.2125 4.28925 20.25 4.13438 20.25 3.96563C20.25 3.59063 20.0906 3.30938 19.7719 3.12188C19.4531 2.93438 19.125 2.94375 18.7875 3.15L11.25 7.875L3.7125 3.15C3.375 2.94375 3.04688 2.93888 2.72813 3.13538C2.40938 3.33263 2.25 3.60938 2.25 3.96563C2.25 4.15313 2.2875 4.317 2.3625 4.45725C2.4375 4.59825 2.55 4.70625 2.7 4.78125L10.6594 9.75938C10.7531 9.81563 10.8517 9.85763 10.9552 9.88538C11.058 9.91388 11.1562 9.92812 11.25 9.92812Z"
+                fill="#4C4840" />
+        </g>
+    </symbol>
+    <symbol id="map" viewBox="0 0 32 40">
+        <g>
+            <path
+                d="M16 20C17.1 20 18.042 19.608 18.826 18.824C19.6087 18.0413 20 17.1 20 16C20 14.9 19.6087 13.958 18.826 13.174C18.042 12.3913 17.1 12 16 12C14.9 12 13.9587 12.3913 13.176 13.174C12.392 13.958 12 14.9 12 16C12 17.1 12.392 18.0413 13.176 18.824C13.9587 19.608 14.9 20 16 20ZM16 40C10.6333 35.4333 6.62533 31.1913 3.976 27.274C1.32533 23.358 0 19.7333 0 16.4C0 11.4 1.60867 7.41667 4.826 4.45C8.042 1.48333 11.7667 0 16 0C20.2333 0 23.958 1.48333 27.174 4.45C30.3913 7.41667 32 11.4 32 16.4C32 19.7333 30.6753 23.358 28.026 27.274C25.3753 31.1913 21.3667 35.4333 16 40Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+    <symbol id="tel" viewBox="0 0 18 18">
+        <g>
+            <path
+                d="M16.9876 18C14.6478 18 12.4469 17.5575 10.3849 16.6725C8.32226 15.7875 6.52243 14.5764 4.98536 13.0392C3.4477 11.5014 2.23281 9.7014 1.34069 7.6392C0.447967 5.5764 0.001607 3.3675 0.001607 1.0125C-0.0133917 0.7425 0.0766003 0.5061 0.271583 0.3033C0.466565 0.1011 0.706544 0 0.991519 0H4.50121C4.77118 0 5.00366 0.1011 5.19864 0.3033C5.39363 0.5061 5.49112 0.75 5.49112 1.035C5.49112 1.695 5.53611 2.3175 5.62611 2.9025C5.7161 3.4875 5.85858 4.0425 6.05357 4.5675C6.12856 4.7325 6.14356 4.9011 6.09856 5.0733C6.05357 5.2461 5.96358 5.4075 5.82859 5.5575L3.57879 7.8075C4.22373 9.1275 5.13865 10.38 6.32354 11.565C7.50844 12.75 8.78332 13.695 10.1482 14.4L12.398 12.15C12.533 12.015 12.6905 11.925 12.8705 11.88C13.0504 11.835 13.2304 11.85 13.4104 11.925C13.9654 12.105 14.5389 12.2436 15.1311 12.3408C15.7238 12.4386 16.3351 12.4875 16.9651 12.4875C17.2501 12.4875 17.4939 12.5925 17.6967 12.8025C17.8989 13.0125 18 13.2675 18 13.5675V17.01C18 17.28 17.9025 17.5125 17.7075 17.7075C17.5125 17.9025 17.2726 18 16.9876 18ZM16.2002 9C16.2002 6.99 15.5027 5.2875 14.1078 3.8925C12.713 2.4975 11.0106 1.8 9.0008 1.8V0C10.2457 0 11.4156 0.2361 12.5105 0.7083C13.6054 1.1811 14.5578 1.8225 15.3677 2.6325C16.1777 3.4425 16.8187 4.395 17.2909 5.49C17.7636 6.585 18 7.755 18 9H16.2002ZM12.6005 9C12.6005 8.01 12.248 7.1625 11.5431 6.4575C10.8381 5.7525 9.99072 5.4 9.0008 5.4V3.6C10.5007 3.6 11.7756 4.125 12.8255 5.175C13.8754 6.225 14.4003 7.5 14.4003 9H12.6005Z"
+                fill="#4C4840" />
+        </g>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 48 47">
+        <g>
+            <path
+                d="M48 23.5589C48 10.5544 37.248 0 24 0C10.752 0 0 10.5544 0 23.5589C0 34.9614 8.256 44.4556 19.2 46.6466V30.6266H14.4V23.5589H19.2V17.6692C19.2 13.1223 22.968 9.42356 27.6 9.42356H33.6V16.4912H28.8C27.48 16.4912 26.4 17.5514 26.4 18.8471V23.5589H33.6V30.6266H26.4V47C38.52 45.8221 48 35.786 48 23.5589Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 48 47">
+        <g>
+            <path
+                d="M31.5 23.4808C31.5 25.4269 30.7098 27.2933 29.3033 28.6694C27.8968 30.0455 25.9891 30.8186 24 30.8186C22.0109 30.8186 20.1032 30.0455 18.6967 28.6694C17.2902 27.2933 16.5 25.4269 16.5 23.4808C16.5 23.0626 16.545 22.6541 16.6225 22.2579H14V32.0342C14 32.7142 14.5625 33.2645 15.2575 33.2645H32.745C33.0781 33.2638 33.3973 33.1339 33.6326 32.9033C33.8679 32.6726 34 32.3601 34 32.0342V22.2579H31.3775C31.455 22.6541 31.5 23.0626 31.5 23.4808ZM24 28.3727C24.6568 28.3725 25.3071 28.2458 25.9138 27.9997C26.5205 27.7537 27.0718 27.3931 27.5361 26.9386C28.0003 26.4842 28.3686 25.9447 28.6198 25.351C28.871 24.7572 29.0002 24.1209 29 23.4784C28.9998 22.8358 28.8703 22.1996 28.6188 21.606C28.3673 21.0124 27.9988 20.4731 27.5343 20.0188C27.0698 19.5646 26.5183 19.2043 25.9115 18.9585C25.3046 18.7128 24.6543 18.5864 23.9975 18.5865C22.6711 18.5869 21.3991 19.1027 20.4614 20.0205C19.5238 20.9384 18.9972 22.1831 18.9975 23.4808C18.9978 24.7785 19.5251 26.023 20.4632 26.9404C21.4014 27.8578 22.6736 28.373 24 28.3727ZM30 18.3444H32.9975C33.1966 18.3444 33.3877 18.2672 33.5287 18.1296C33.6698 17.9921 33.7493 17.8054 33.75 17.6106V14.678C33.75 14.4827 33.6707 14.2954 33.5296 14.1574C33.3885 14.0193 33.1971 13.9417 32.9975 13.9417H30C29.8004 13.9417 29.609 14.0193 29.4679 14.1574C29.3268 14.2954 29.2475 14.4827 29.2475 14.678V17.6106C29.25 18.0142 29.5875 18.3444 30 18.3444ZM24 0C17.6348 0 11.5303 2.47386 7.02944 6.87737C2.52856 11.2809 0 17.2533 0 23.4808C0 29.7083 2.52856 35.6808 7.02944 40.0843C11.5303 44.4878 17.6348 46.9616 24 46.9616C27.1517 46.9616 30.2726 46.3543 33.1844 45.1743C36.0962 43.9942 38.742 42.2647 40.9706 40.0843C43.1992 37.9039 44.967 35.3154 46.1731 32.4665C47.3792 29.6177 48 26.5644 48 23.4808C48 20.3973 47.3792 17.3439 46.1731 14.4951C44.967 11.6463 43.1992 9.05777 40.9706 6.87737C38.742 4.69698 36.0962 2.96739 33.1844 1.78737C30.2726 0.607349 27.1517 0 24 0ZM36.5 32.993C36.5 34.4874 35.25 35.7104 33.7225 35.7104H14.2775C12.75 35.7104 11.5 34.4874 11.5 32.993V13.9686C11.5 12.4742 12.75 11.2512 14.2775 11.2512H33.7225C35.25 11.2512 36.5 12.4742 36.5 13.9686V32.993Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 49 47">
+        <g>
+            <path
+                d="M24.5 0C10.976 0 0 10.528 0 23.5C0 36.472 10.976 47 24.5 47C38.024 47 49 36.472 49 23.5C49 10.528 38.024 0 24.5 0ZM35.868 15.98C35.5005 19.693 33.908 28.717 33.0995 32.8765C32.7565 34.639 32.0705 35.2265 31.4335 35.297C30.0125 35.4145 28.9345 34.404 27.5625 33.5345C25.4065 32.1715 24.1815 31.3255 22.099 30.0095C19.6735 28.482 21.2415 27.636 22.638 26.273C23.0055 25.9205 29.2775 20.445 29.4 19.9515C29.417 19.8768 29.4148 19.7992 29.3934 19.7254C29.3721 19.6517 29.3323 19.5841 29.2775 19.5285C29.1305 19.411 28.9345 19.458 28.763 19.4815C28.5425 19.5285 25.1125 21.714 18.424 26.038C17.444 26.6725 16.562 27.0015 15.778 26.978C14.896 26.9545 13.23 26.508 11.9805 26.1085C10.437 25.6385 9.2365 25.38 9.3345 24.5575C9.3835 24.1345 9.996 23.7115 11.1475 23.265C18.3015 20.2805 23.0545 18.3065 25.431 17.3665C32.242 14.6405 33.6385 14.1705 34.5695 14.1705C34.7655 14.1705 35.231 14.2175 35.525 14.4525C35.77 14.6405 35.8435 14.899 35.868 15.087C35.8435 15.228 35.8925 15.651 35.868 15.98Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+    <symbol id="viber" viewBox="0 0 37 39">
+        <g>
+            <path
+                d="M17.5189 0C14.3875 0.0455 7.66001 0.559 3.90139 4.00887C1.10964 6.80387 0.124889 10.8875 0.0225144 15.9526C-0.0798606 21.0161 -0.213111 30.511 8.93889 33.085H8.94376L8.93726 37.011C8.93726 37.011 8.87714 38.5986 9.92851 38.9236C11.1911 39.3169 11.9338 38.1111 13.146 36.8079C13.8074 36.0929 14.7255 35.0464 15.4161 34.2404C21.6724 34.7701 26.4856 33.5644 27.0349 33.3872C28.2959 32.9777 35.4459 32.0612 36.6094 22.5696C37.8119 12.7871 36.0244 6.59587 32.8069 3.80737C31.8384 2.91362 27.9221 0.069875 19.1975 0.0325C19.1975 0.0325 18.5556 -0.008125 17.5124 0.004875L17.5189 0ZM17.6131 2.75112C18.4988 2.74462 19.0431 2.77875 19.0431 2.77875C26.4239 2.81125 29.9583 5.03425 30.7789 5.7785C33.5008 8.11037 34.8901 13.689 33.8761 21.8611V21.8644C32.8946 29.7911 27.0934 30.2884 26.0241 30.6313C25.5691 30.7775 21.3409 31.8289 16.0255 31.4827C16.0255 31.4827 12.067 36.2603 10.8304 37.5017C10.6354 37.6967 10.4079 37.7731 10.2584 37.7357C10.0471 37.6821 9.98864 37.4303 9.99026 37.063L10.0228 30.5338C2.28451 28.3888 2.73464 20.3092 2.82401 16.0794C2.91176 11.8479 3.70639 8.38013 6.06751 6.04825C9.25251 3.16712 14.9628 2.769 17.6213 2.7495L17.6131 2.75112ZM18.2306 6.97937C18.1047 6.98573 17.9859 7.04004 17.8986 7.13117C17.8114 7.2223 17.7624 7.34335 17.7615 7.46949C17.7607 7.59564 17.8082 7.71732 17.8942 7.80959C17.9802 7.90187 18.0982 7.95774 18.2241 7.96575C20.8631 7.982 23.0114 8.83838 24.7696 10.5527C26.5133 12.2525 27.4021 14.5632 27.4233 17.5955C27.4265 17.8669 27.6508 18.083 27.9221 18.083C28.052 18.0813 28.176 18.0285 28.2673 17.936C28.3585 17.8436 28.4096 17.7189 28.4096 17.589C28.3869 14.365 27.4054 11.7455 25.4586 9.8475C23.5249 7.9625 21.0825 6.99888 18.2306 6.97937ZM11.7956 8.10875C11.4502 8.06091 11.0985 8.1277 10.7946 8.29887L10.7784 8.30212C10.0796 8.7035 9.45239 9.21537 8.91614 9.81662C8.91289 9.82312 8.90639 9.82312 8.90314 9.82962C8.46926 10.3545 8.22064 10.8664 8.15564 11.3701C8.14291 11.4452 8.13909 11.5216 8.14426 11.5976C8.14426 11.8186 8.18001 12.0364 8.24989 12.2476L8.27101 12.2639C8.49039 13.0439 9.03964 14.3374 10.2291 16.4954C10.9116 17.7434 11.6965 18.9329 12.5789 20.0476C13.0176 20.6066 13.4889 21.1413 13.9926 21.6466L14.2071 21.8611C14.7109 22.3616 15.2471 22.8361 15.8061 23.2749C16.9218 24.1574 18.1101 24.944 19.3584 25.6263C21.5164 26.8174 22.8131 27.365 23.5899 27.586L23.6061 27.6087C23.8888 27.7012 24.1881 27.7317 24.4836 27.6981C24.9874 27.6396 25.5025 27.3894 26.0241 26.9506C26.0306 26.9506 26.029 26.9474 26.0371 26.9425C26.6384 26.4062 27.147 25.7725 27.5484 25.077L27.5533 25.0607C27.9189 24.3587 27.797 23.6925 27.2608 23.2407C27.2543 23.2407 26.1265 22.2983 25.5756 21.892C24.9906 21.4776 24.3894 21.0925 23.767 20.7383C22.9383 20.2751 22.09 20.566 21.739 21.021L21.0126 21.9375C20.6389 22.3974 19.945 22.3372 19.945 22.3372C14.875 21.0438 13.5181 15.9104 13.5181 15.9104C13.5181 15.9104 13.458 15.2181 13.9211 14.8444L14.836 14.1164C15.2861 13.767 15.577 12.9187 15.1123 12.0884C14.7593 11.4648 14.3742 10.8601 13.9585 10.2765C13.5221 9.70543 13.0724 9.14465 12.6098 8.59463C12.406 8.33944 12.1158 8.16775 11.794 8.112L11.7956 8.10875ZM19.0919 9.53875C18.9613 9.53487 18.8345 9.58303 18.7394 9.67262C18.6444 9.76222 18.5888 9.88591 18.5849 10.0165C18.581 10.1471 18.6292 10.2739 18.7188 10.3689C18.8084 10.464 18.9321 10.5196 19.0626 10.5235C20.9476 10.6616 22.3403 11.2808 23.3608 12.3923C24.3845 13.5103 24.872 14.8688 24.833 16.5685C24.8401 16.6935 24.8941 16.8112 24.9841 16.8981C25.0742 16.985 25.1937 17.0348 25.3189 17.0375C25.444 17.0401 25.5656 16.9955 25.6592 16.9125C25.7529 16.8295 25.8118 16.7142 25.8243 16.5896C25.8649 14.6802 25.2815 13.026 24.0904 11.7244C22.8879 10.4081 21.2028 9.68825 19.1341 9.53712H19.0951L19.0919 9.53875ZM19.8443 12.1875C19.7191 12.1893 19.5993 12.2384 19.5089 12.3249C19.4185 12.4114 19.3641 12.529 19.3568 12.6539C19.3438 12.9253 19.5518 13.1576 19.8248 13.1739C20.6746 13.2194 21.2466 13.4583 21.6334 13.8596C22.0234 14.2578 22.2639 14.8671 22.3094 15.7511C22.3261 15.8736 22.3882 15.9854 22.4833 16.0644C22.5785 16.1434 22.6998 16.1838 22.8233 16.1777C22.9468 16.1715 23.0635 16.1193 23.1504 16.0313C23.2373 15.9433 23.288 15.8259 23.2925 15.7024C23.2438 14.6559 22.9431 13.7881 22.35 13.1722C21.7536 12.558 20.8989 12.2395 19.88 12.1859H19.8508L19.8443 12.1875Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+    <symbol id="whats-app" viewBox="0 0 47 47">
+        <g>
+            <path
+                d="M0.00943144 47L3.18663 35.3252C1.0931 31.7364 -0.00679298 27.6548 3.15657e-05 23.5C3.15657e-05 10.5209 10.521 0 23.5 0C36.4791 0 47 10.5209 47 23.5C47 36.479 36.4791 47 23.5 47C19.347 47.0067 15.2672 45.9076 11.6795 43.8157L0.00943144 47ZM15.0189 12.4738C14.7154 12.4926 14.4189 12.5726 14.147 12.7088C13.8921 12.8532 13.6594 13.0336 13.4561 13.2446C13.1741 13.5101 13.0143 13.7404 12.8428 13.9637C11.9742 15.094 11.5071 16.4815 11.515 17.907C11.5197 19.0585 11.8205 20.1794 12.2905 21.2275C13.2517 23.3472 14.8332 25.5915 16.9224 27.6712C17.4253 28.1718 17.9164 28.6747 18.4452 29.1423C21.0381 31.4253 24.1281 33.0716 27.4692 33.9504L28.8063 34.1549C29.2411 34.1784 29.6758 34.1455 30.1129 34.1243C30.7973 34.089 31.4656 33.9037 32.0705 33.5815C32.3782 33.423 32.6785 33.2504 32.9705 33.0645C32.9705 33.0645 33.0716 32.9987 33.2643 32.853C33.5815 32.618 33.7766 32.4511 34.0398 32.1762C34.2348 31.9741 34.404 31.7367 34.5333 31.4665C34.7166 31.0834 34.8999 30.3526 34.9751 29.7439C35.0315 29.2786 35.015 29.0248 35.008 28.8674C34.9986 28.6159 34.7894 28.3551 34.5615 28.2446L33.1938 27.6313C33.1938 27.6313 31.1493 26.7406 29.9014 26.1719C29.7698 26.1146 29.6288 26.0819 29.4855 26.0756C29.3247 26.0591 29.1622 26.0772 29.009 26.1286C28.8558 26.1801 28.7154 26.2638 28.5972 26.374V26.3693C28.5854 26.3693 28.428 26.5033 26.7289 28.5619C26.6314 28.6929 26.4971 28.792 26.3431 28.8464C26.189 28.9008 26.0223 28.9081 25.8641 28.8674C25.711 28.8264 25.561 28.7746 25.4153 28.7123C25.1239 28.5901 25.0228 28.5431 24.8231 28.4561L24.8113 28.4514C23.4669 27.8645 22.2221 27.0716 21.1218 26.1014C20.8257 25.8429 20.5508 25.5609 20.2688 25.2883C19.3442 24.4029 18.5385 23.4013 17.8718 22.3085L17.7331 22.0853C17.6335 21.9353 17.553 21.7734 17.4934 21.6035C17.4041 21.2581 17.6368 20.9808 17.6368 20.9808C17.6368 20.9808 18.2078 20.3557 18.4734 20.0173C18.6945 19.736 18.9008 19.4435 19.0914 19.1407C19.3687 18.6942 19.4557 18.236 19.31 17.8811C18.652 16.2737 17.9705 14.6734 17.2702 13.0848C17.1315 12.7699 16.7203 12.5443 16.3466 12.4996C16.2197 12.4855 16.0928 12.4714 15.9659 12.462C15.6503 12.4464 15.3341 12.4519 15.0189 12.4738Z"
+                fill="#33D5BE" />
+        </g>
+    </symbol>
+</svg>
+    <main class="page__main main">
+        <section class="page__english-main english-main slider-main__slide slide-main swiper-slide"
+            data-scroll="Главная">
+            <div class="slide-main__content content-slide-main">
+                <div class="content-slide-main__container container">
+                    <div class="content-slide-main__body">
+                        <div class="content-slide-main__title-block main-title-block">
+                            <h1 class="main-title main-title_english">Курс английського языка</h1>
+                            <div class="main-subtitle main-subtitle_english">Записывайтесь на пробное занятие прямо
+                                сейчас</div>
+                        </div>
+                        <div class="english-main__buttons buttons-english-main">
+                            <a href="" class="buttons-english-main__btn buttons-english-main__btn_test btn-test">Пройти
+                                тест</a>
+                            <a href="" class="buttons-english-main__btn buttons-english-main__btn_singup">Записатись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-main__image-block">
+                <div class="slide-main__image ibg">
+                    <picture><source srcset="img/main/slider/bg.webp" type="image/webp"><img src="img/main/slider/bg.jpg" alt="slider-bg"></picture>
+                </div>
+            </div>
+        </section>
+        <section class="page__english-about-us english-about-us" data-scroll="О нас">
+            <div class="english-about-us__container container">
+                <div class="english-about-us__body">
+                    <div class="english-about-us__text">
+                        <p>
+                            Знание английского языка сейчас – это практически обязательный навык для всех, кто хочет
+                            быть
+                            успешным и востребованным. Поэтому, даже оказавшись в Польше, стоит задуматься не только об
+                            изучении польского, но и о том, чтобы начать усиленно заниматься английским. Ведь именно на
+                            этом языке проводится огромное количество важных деловых переговоров, и составляются
+                            программы обучения во многих высших учебных заведениях. Знание английского – это билет в
+                            мир, где стираются границы и языковые барьеры, а все зависит исключительно от вас самих.
+                        </p>
+                        <p>
+                            Понимая важность английского, а также стараясь помочь своим студентам лучше адаптироваться к
+                            жизни в ЕС, школа Bla-bla School разработала уникальные курсы английского языка в Польше –
+                            как интенсивные (предполагающие месяц ускоренного обучения), так и семестральные. Для
+                            удобства наших учеников, занятия могут проводиться как онлайн, так и непосредственно в
+                            классах.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="english-about-us__bg-squares bg-squares">
+                <div class="bg-squares__row">
+                    <div class="bg-squares__column">
+                        <div class="bg-squares__element bg-squares__element_big"></div>
+                        <div class="bg-squares__element bg-squares__element_blur"></div>
+                        <div class="bg-squares__element"></div>
+                    </div>
+                    <div class="bg-squares__column">
+                        <div class="bg-squares__element bg-squares__element_big"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__courses courses" data-scroll="Курсы">
+            <div class="courses__container container">
+                <div class="courses__row">
+                    <div class="courses__column">
+                        <div class="courses__item item-courses">
+                            <h4 class="item-courses__title">Онлайн курс</h4>
+                            <div class="item-courses__list">
+                                <li class="item-courses__link">Уровень: A1/А2/В1/B2/C1</li>
+                                <li class="item-courses__link">От 1 месяца</li>
+                                <li class="item-courses__link">От 3 раз в неделю</li>
+                            </div>
+                            <a href="" class="item-courses__btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="courses__column">
+                        <div class="courses__item item-courses">
+                            <h4 class="item-courses__title">Интенсивный курс</h4>
+                            <div class="item-courses__list">
+                                <li class="item-courses__link">Уровень: A1/А2/В1/B2/C1</li>
+                                <li class="item-courses__link">2 недели</li>
+                                <li class="item-courses__link">62 часа</li>
+                            </div>
+                            <a href="" class="item-courses__btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="courses__column">
+                        <div class="courses__item item-courses">
+                            <h4 class="item-courses__title">Офлайн курс</h4>
+                            <div class="item-courses__list">
+                                <li class="item-courses__link">Уровень: A1/А2/В1/B2/C1</li>
+                                <li class="item-courses__link">От 1 месяца</li>
+                                <li class="item-courses__link">От 3 раз в неделю</li>
+                            </div>
+                            <a href="" class="item-courses__btn">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__test test">
+            <div class="test__container container">
+                <div class="test__body">
+                    <h2 class="test__title title">
+                        Узнай свой уровень языка <br> <span>прямо сейчас</span>
+                    </h2>
+                    <div class="test__text">Пройдите тест и мы подберем вам програму обучения для вашего уровня</div>
+                    <div class="test__tabs tabs-test">
+                        <div class="tabs-test__block block-test" id="test-1">
+                            <ul class="block-test__list">
+                                <li class="block-test__link link-block-test">
+                                    <div class="link-block-test__labal-block label-block">
+                                        <h3 class="label">Первый вопрос</h3>
+                                        <div class="underlabel-text">
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question Text of question Text of question Text of question Text of question
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question
+                                        </div>
+                                    </div>
+                                    <ul class="link-block-test__items items-link-block-test">
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-1'
+                                                    class='items-link-block-test__input'>
+                                                Тhe first answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-2'
+                                                    class='items-link-block-test__input'>
+                                                Тhe second answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-3'
+                                                    class='items-link-block-test__input'>
+                                                Тhe third answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-4'
+                                                    class='items-link-block-test__input'>
+                                                Тhe fourth answer option
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="link-block-test__buttons">
+                                        <a href="" class="link-block-test__btn link-block-test__btn_miss">Пропустить</a>
+                                        <a href="" class="link-block-test__btn link-block-test__btn_next">Дальше</a>
+                                    </div>
+                                </li>
+                                <li class="block-test__link link-block-test" style="display: none;">
+                                    <div class="link-block-test__labal-block label-block">
+                                        <h3 class="label">Второй вопрос</h3>
+                                        <div class="underlabel-text">
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question Text of question Text of question Text of question Text of question
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question
+                                        </div>
+                                    </div>
+                                    <ul class="link-block-test__items items-link-block-test">
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-1'
+                                                    class='items-link-block-test__input'>
+                                                Тhe first answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-2'
+                                                    class='items-link-block-test__input'>
+                                                Тhe second answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-3'
+                                                    class='items-link-block-test__input'>
+                                                Тhe third answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-4'
+                                                    class='items-link-block-test__input'>
+                                                Тhe fourth answer option
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="link-block-test__buttons">
+                                        <a href="" class="link-block-test__btn link-block-test__btn_miss">Пропустить</a>
+                                        <a href="" class="link-block-test__btn link-block-test__btn_next">Дальше</a>
+                                    </div>
+                                </li>
+                                <li class="block-test__link link-block-test" style="display: none;">
+                                    <div class="link-block-test__labal-block label-block">
+                                        <h3 class="label">Третий вопрос</h3>
+                                        <div class="underlabel-text">
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question Text of question Text of question Text of question Text of question
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question
+                                        </div>
+                                    </div>
+                                    <ul class="link-block-test__items items-link-block-test">
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-1'
+                                                    class='items-link-block-test__input'>
+                                                Тhe first answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-2'
+                                                    class='items-link-block-test__input'>
+                                                Тhe second answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-3'
+                                                    class='items-link-block-test__input'>
+                                                Тhe third answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-4'
+                                                    class='items-link-block-test__input'>
+                                                Тhe fourth answer option
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="link-block-test__buttons">
+                                        <a href="" class="link-block-test__btn link-block-test__btn_miss">Пропустить</a>
+                                        <a href="" class="link-block-test__btn link-block-test__btn_next">Дальше</a>
+                                    </div>
+                                </li>
+                                <li class="block-test__link link-block-test" style="display: none;">
+                                    <div class="link-block-test__labal-block label-block">
+                                        <h3 class="label">Четвертый вопрос</h3>
+                                        <div class="underlabel-text">
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question Text of question Text of question Text of question Text of question
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question
+                                        </div>
+                                    </div>
+                                    <ul class="link-block-test__items items-link-block-test">
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-1'
+                                                    class='items-link-block-test__input'>
+                                                Тhe first answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-2'
+                                                    class='items-link-block-test__input'>
+                                                Тhe second answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-3'
+                                                    class='items-link-block-test__input'>
+                                                Тhe third answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-4'
+                                                    class='items-link-block-test__input'>
+                                                Тhe fourth answer option
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="link-block-test__buttons">
+                                        <a href="" class="link-block-test__btn link-block-test__btn_miss">Пропустить</a>
+                                        <a href="" class="link-block-test__btn link-block-test__btn_next">Дальше</a>
+                                    </div>
+                                </li>
+                                <li class="block-test__link link-block-test" style="display: none;">
+                                    <div class="link-block-test__labal-block label-block">
+                                        <h3 class="label">Пятый вопрос</h3>
+                                        <div class="underlabel-text">
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question Text of question Text of question Text of question Text of question
+                                            Text of question Text of question Text of question Text of question Text of
+                                            question
+                                        </div>
+                                    </div>
+                                    <ul class="link-block-test__items items-link-block-test">
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-1'
+                                                    class='items-link-block-test__input'>
+                                                Тhe first answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-2'
+                                                    class='items-link-block-test__input'>
+                                                Тhe second answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-3'
+                                                    class='items-link-block-test__input'>
+                                                Тhe third answer option
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="items-link-block-test__label">
+                                                <input autocomplete='off' type='checkbox' name='answer-4'
+                                                    class='items-link-block-test__input'>
+                                                Тhe fourth answer option
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="link-block-test__buttons">
+                                        <a href="" class="link-block-test__btn link-block-test__btn_miss">Пропустить</a>
+                                        <a href="" class="link-block-test__btn link-block-test__btn_next">Дальше</a>
+                                    </div>
+                                </li>
+                                <li class="block-test__link block-test__link_end end-block-test-link"
+                                    style="display: none;">
+                                    <div class="end-block-test-link__body">
+                                        <div class="end-block-test-link__text">Спасибо за прохождение теста!!!</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test__bg-elements bg-elements">
+                <div class="bg-elements__item"></div>
+                <div class="bg-elements__item bg-elements__item_big"></div>
+            </div>
+        </section>
+        <section class="page__news news">
+            <div class="news__container container">
+                <h2 class="news__title title title_white">Новости</h2>
+                <!-- Slider main container -->
+                <div class="news__swiper swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="news__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 1</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 2</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 3</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/01.webp" type="image/webp"><img src="img/news/01.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 4</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/02.webp" type="image/webp"><img src="img/news/02.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 5</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="news__slide slide-news swiper-slide">
+                            <div class="slide-news__item">
+                                <div class="slide-news__image image-slide-news">
+                                    <div class="image-slide-news__img ibg">
+                                        <picture><source srcset="img/news/03.webp" type="image/webp"><img src="img/news/03.jpg" alt="news"></picture>
+                                    </div>
+                                </div>
+                                <div class="slide-news__body">
+                                    <div class="slide-news__labal-block label-block">
+                                        <h3 class="label">Новина 6</h3>
+                                        <div class="underlabel-text">
+                                            Опис новини Опис новини Опис новини Опис новини Опис новини Опис новини
+                                        </div>
+                                    </div>
+                                    <a href="" class="slide-news__link-more">Подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="news__btn news__btn_prev swiper-button-prev"></div>
+                    <div class="news__btn news__btn_next swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="page__questions questions">
+            <div class="questions__container container">
+                <div class="questions__body">
+                    <div class="questions__content">
+                        <h2 class="questions__title title">Остались вопросы?</h2>
+                        <div class="questions__text">Оставте ваш номер для связи и мы перезвоним вам!</div>
+                        <form action="#" class="questions__form form-qustions">
+                            <input autocomplete='off' type='text' name='form[]' data-value='' placeholder="Ваше имя"
+                                class='input form-qustions__input'>
+                            <input autocomplete='off' type='tel' name='form[]' data-value=''
+                                placeholder="Ваш номер телефону" class='input form-qustions__input'>
+                            <button type='submit' class='form-qustions__btn'>Записатись</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page__contacts contacts" data-scroll="Контакты">
+            <div class="contacts__body">
+                <div class="contacts__content content-contacts">
+                    <div class="content-contacts__title title title_white">Контакты</div>
+                    <div class="content-contacts__tels">
+                        <a href="tel:+48792765335" class="content-contacts__tel">+48 792-765-335</a>
+                        <a href="tel:+48792765778" class="content-contacts__tel">+48 792-765-778</a>
+                        <a href="tel:+48792765443" class="content-contacts__tel">+48 792-765-443</a>
+                    </div>
+                    <a href="mailto:Buiro.bpmt@gmail.com" class="content-contacts__email">Buiro.bpmt@gmail.com</a>
+                    <div class="content-contacts__socials socials-contacts">
+                        <a href="" class="socials-contacts__item">
+                            <img src="img/icons/instagram.svg" alt="instagram">
+                        </a>
+                        <a href="" class="socials-contacts__item">
+                            <img src="img/icons/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="" class="socials-contacts__item">
+                            <img src="img/icons/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="" class="socials-contacts__item">
+                            <img src="img/icons/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <a href="" class="socials-contacts__item">
+                            <img src="img/icons/viber.svg" alt="viber">
+                        </a>
+                    </div>
+                    <div class="content-contacts__address addres-contacts">
+                        <div class="addres-contacts__text">Warszawa ul.Kopernika 30/329</div>
+                        <a href="https://www.google.com.ua/maps/dir//Miko%C5%82aja+Kopernika+30,+00-336+Warszawa,+%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0/@52.2372819,21.0184545,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47193594b33fb6e9:0x7996b8bd9cf3b46b!2m2!1d21.0206432!2d52.2372819?hl=ru"
+                            target="_blank" class="addres-contacts__btn">Проложить маршрут</a>
+                    </div>
+                </div>
+                <div class="contacts__image ibg">
+                    <picture><source srcset="img/contacts/map.webp" type="image/webp"><img src="img/contacts/map.jpg" alt="map"></picture>
+                </div>
+            </div>
+            <div class="contacts__bg-elements bg-elements">
+                <div class="bg-elements__item bg-elements__item_big"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__top top-footer">
+            <a href="" class="top-footer__logo">
+                <picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="logo"></picture>
+            </a>
+            <nav class="top-footer__menu">
+                <ul class="top-footer__list">
+                    <li class="top-footer__item">
+                        <a href="index.html" class="top-footer__link">Главная </a>
+                    </li>
+                    <li class="top-footer__item">
+                        <a href="english.html" class="top-footer__link">Курс английского языка </a>
+                    </li>
+                    <li class="top-footer__item">
+                        <a href="polish.html" class="top-footer__link">Курс польского языка </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="" class="top-footer__arrow-scroll"></a>
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__text">Политика конфиденциальности</div>
+            <div class="bottom-footer__socials socials-footer">
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/facebook.svg" alt="facebook">
+                </a>
+                <a href="" class="socials-footer__item">
+                    <img src="img/icons/telegram.svg" alt="telegram">
+                </a>
+            </div>
+            <div class="bottom-footer__copy">© BLA-BLA SCHOOL 2022</div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230329215230"></script>
+    <script src="js/app.min.js?_v=20230329215230"></script>
+</body>
+
+</html>
